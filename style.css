@@ -94,6 +94,9 @@ section ul {
     width:100%;
     border: 1px solid #333;
 }
+#projects article ul li {
+    list-style: none;
+}
 
 #links {
     height: 10em;
