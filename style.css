@@ -6,9 +6,11 @@
     padding:0;
 
 }
+body{
+    padding-top: 2em;
+}
 html{
     font-size:16px;
-    margin-top: 2em;
 }
 h1,h2,h3{
     color: #666;
@@ -74,21 +76,24 @@ section > p{
 section ul {
 
 }
-#aboutMark div img {
+#aboutMark p img {
     border-radius: 100%;
+    float: right;
+    margin-left: 10px;
 }
 #aboutMark ul li {
     list-style: none;
 }
 #projects {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
 }
 #projects article {
     background: #ccc;
     padding: 1em;
+    border: 1px solid black;
 }
 #projects article img {
     width:100%;
