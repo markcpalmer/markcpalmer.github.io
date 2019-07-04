@@ -46,7 +46,7 @@ nav {
     top:0;
     left:0;
     width:100%;
-    background:#333;
+    background:rgb(10, 10, 10);
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -58,7 +58,7 @@ nav a{
     padding: .5em 2em;
 }
 nav a hover{
-    background:#666;
+    background:#fff;
 }
 .keyboard{
     display:grid;
@@ -84,11 +84,33 @@ section ul {
 #aboutMark ul li {
     list-style: none;
 }
+
 #projects {
+    /*
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
+    */
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+}
+.projectTab {
+    border: 1px solid black;
+    border-top-left-radius: 8px;
+    padding: 10px;
+    border-bottom: none;
+    background-color: #ccc;
+    display: inline-block;
+    margin-right: 20px;
+    width: 200px;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+}
+.projectActiveTab {
+    z-index: 3;
 }
 #projects article {
     background: #ccc;

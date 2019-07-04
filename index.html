@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mark C. Palmer</title>
     <script src="https://kit.fontawesome.com/cda72ff754.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -25,7 +25,7 @@
     <main>
         <section id="aboutMark">
             <h2>About Mark</h2>
-            <p>
+            <p id="aboutMarkParagraph">
                 <img src="./images/markpalmer.jpg">
                 Information Technology professional with over 15 years of experience working with local and state educational agencies, rollouts for large
                 and medium sized companies networks. Diverse experience includes trouble shooting, programming, managing employees, developing marketing 
@@ -33,66 +33,94 @@
                 within a budget.  Skilled at multi-tasking.  Comfortable working in a fast paced, ever-changing environment.  Extremely personable with strong 
                 customer focus.  Exstensive work as a collaborative team member.
             </p>
-            <h2 id="contactInfo">Contact Info </h2>
-            <p>I would be happy to talk to you about how I can meet your needs!</p>
-            <ul>
-                <li>Email: Mark.Palmer@itsalllive.com</li>
-                <li>Phone: (440) 935-9237</li>
-            </ul>
+        </section>
+
+        <section id="contactInfo">
+            <h2>Contact Info </h2>
+            <div id="contactInfoParagraph">
+                I would be happy to talk to you about how I can meet your needs!
+                <ul>
+                    <li>Email: Mark.Palmer@itsalllive.com</li>
+                    <li>Phone: (440) 935-9237</li>
+                </ul>
+            </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <p>
-                C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub
-            </p>
+            <div id="skillsParagraph">
+                
+                <p>
+                    C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub
+                </p>
+            </div>
         </section>
         
         <section id="marksProjects">
             <h2>Mark's Projects</h2>
-            <p> Below are screenshots of projects that I have completed. Click on the image to see the GitHub.
-            
-            </p>
-            <div id="projects">
-                <article>
-                    <h3>Hospital Project</h3>
-                    <a href="https://github.com/markcpalmer/HospitalProblem" target="_blank">
-                        <img src="./images/hospitalProject.jpg">
-                    </a>
-                    <ul>
-                        <li>Object Oriented Programming</li>
-                        <li>Lists</li>
-                        <li>C#</li>
-                        <li>Test Driven Design</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Virtual Pet</h3>
-                    <a href="https://github.com/mega24cde/VirtualPet" target="_blank">
-                        <img src="./images/virtualPet.jpg">
-                    </a>
-                    <ul>
-                        <li>Loops</li>
-                        <li>Lists</li>
-                        <li>Conditional Statements</li>
-                        <li>Arrays</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Code Business</h3>
-                    <a href="https://github.com/markcpalmer/codeBusiness" target="_blank">
-                        <img src="./images/codebusiness.jpg">
-                    </a>
-                    <ul>
-                        <li>HTML</li>
-                        <li>Cascading Style Sheets</li>
-                        <li>Grids</li>
-                        <li>Flexbox</li>
-                    </ul>
+            <div id="marksProjectsParagraph">
+                <div>
+                    Below are screenshots of projects that I have completed. Click on the tab to see the project pic. Click on the image to see the GitHub.
+                </div>
+                
+                <div class="projectTab projectActiveTab" id="tabHospital">
+                    Hospital
+                </div>
+                <div class="projectTab" id="tabVirtualpet">
+                    Virtual Pet
+                </div>
+                <div class="projectTab" id="tabCodebusiness">
+                    Code Business
+                </div>
+                        
+                <div id="projects">
+                    <article>
+                        <div id="projectHospital">
+                            <h3>Hospital Project</h3>
+                            <a href="https://github.com/markcpalmer/HospitalProblem" target="_blank">
+                                <img src="./images/hospitalProject.jpg">
+                            </a>
+                            <ul>
+                                <li>Object Oriented Programming</li>
+                                <li>Lists</li>
+                                <li>C#</li>
+                                <li>Test Driven Design</li>
+                            </ul>
+                        </div>
+
+                        <div id="projectVirtualpet">
+                            <h3>Virtual Pet</h3>
+                            <a href="https://github.com/mega24cde/VirtualPet" target="_blank">
+                                <img src="./images/virtualPet.jpg">
+                            </a>
+                            <ul>
+                                <li>Loops</li>
+                                <li>Lists</li>
+                                <li>Conditional Statements</li>
+                                <li>Arrays</li>
+                            </ul>
+                        </div>
+
+                        <div id="projectCodebusiness">
+                            <h3>Code Business</h3>
+                            <a href="https://github.com/markcpalmer/codeBusiness" target="_blank">
+                                <img src="./images/codebusiness.jpg">
+                            </a>
+                            <ul>
+                                <li>HTML</li>
+                                <li>Cascading Style Sheets</li>
+                                <li>Grids</li>
+                                <li>Flexbox</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
         <section id="links">
+            
             <h2>Links to Marks professional sites.</h2>
+            <div id="linksParagraph">
             <ul>
                 <li>
                     <a href="https://linkedin.com/in/mark-palmer-asp" target="_blank">
@@ -115,10 +143,12 @@
                     </i>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <footer>
         &copy; 2019 Mark C. Palmer
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
