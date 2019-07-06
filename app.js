@@ -27,7 +27,7 @@ document.getElementById("skills").addEventListener("click",function(){
     showHideItem('skillsParagraph');
 })
 
-//document.getElementById("marksProjectsParagraph").style.display="none";
+document.getElementById("marksProjectsParagraph").style.display="none";
 document.getElementById("marksProjects").addEventListener("click",function(){
     showHideItem('marksProjectsParagraph');
 })
@@ -37,38 +37,40 @@ document.getElementById("links").addEventListener("click",function(){
     showHideItem('linksParagraph');
 })
 
-
+/*turn on and off the tabs depending on which is clicked*/ 
 
 document.getElementById('projectVirtualpet').style.display = "none";
 document.getElementById('projectCodebusiness').style.display = "none";
 
 
+document.getElementById('tabHospital').addEventListener("click", function() {
+    document.getElementById('tabHospital').classList.add("projectActiveTab");
+    document.getElementById('tabVirtualpet').classList.remove("projectActiveTab");
+    document.getElementById('tabCodebusiness').classList.remove("projectActiveTab");
+
+    document.getElementById('projectHospital').style.display = "block";
+    document.getElementById('projectVirtualpet').style.display = "none";
+    document.getElementById('projectCodebusiness').style.display = "none";
+});
+
 document.getElementById('tabVirtualpet').addEventListener("click", function() {
     document.getElementById('tabHospital').classList.remove("projectActiveTab");
     document.getElementById('tabVirtualpet').classList.add("projectActiveTab");
     document.getElementById('tabCodebusiness').classList.remove("projectActiveTab");
+
     document.getElementById('projectHospital').style.display = "none";
     document.getElementById('projectVirtualpet').style.display = "block";
     document.getElementById('projectCodebusiness').style.display = "none";
 });
 
 
-document.getElementById('tabHospital').addEventListener("click", function() {
-    document.getElementById('tabVirtualpet').classList.remove("projectActiveTab");
-    document.getElementById('tabHospital').classList.add("projectActiveTab");
-    document.getElementById('tabCodebusiness').classList.remove("projectActiveTab");
-    document.getElementById('projectVirtualpet').style.display = "none";
-    document.getElementById('projectHospital').style.display = "block";
-    document.getElementById('projectCodebusiness').style.display = "none";
-});
-
 document.getElementById('tabCodebusiness').addEventListener("click", function() {
-    document.getElementById('tabVirtualpet').classList.remove("projectActiveTab");
-    document.getElementById('tabcodebusiness').classList.add("projectActiveTab");
     document.getElementById('tabHospital').classList.remove("projectActiveTab");
+    document.getElementById('tabVirtualpet').classList.remove("projectActiveTab");
+    document.getElementById('tabCodebusiness').classList.add("projectActiveTab");
+
+    document.getElementById('projectHospital').style.display = "none";
     document.getElementById('projectVirtualpet').style.display = "none";
     document.getElementById('projectCodebusiness').style.display = "block";
-    
-    document.getElementById('projectHospital').style.display = "none";
 });
 
