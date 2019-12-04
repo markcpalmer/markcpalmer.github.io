@@ -44,7 +44,7 @@ header span{
 #backGroundImage {
     background-image: url("./images/computer2.jpg");
     background-repeat: no-repeat;
-    background-size: 1500px 700px;
+    background-size: 1500px 750px;
     align-items: left;
     min-height: 100vh;
     width: 100%;
