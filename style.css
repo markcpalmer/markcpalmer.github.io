@@ -13,7 +13,7 @@ html{
     font-size:16px;
 }
 h1,h2,h3{
-    color: #666;
+    color: rgb(247, 3, 3);
 }
 h2:hover {
     color: #966;
@@ -39,10 +39,10 @@ header h1{
 }
 header span{
     font-size: 1.5em;
-    color:rgb(177, 164, 164);
+    color:rgb(240, 8, 8);
 }
 #backGroundImage {
-    background-image: url("./images/computer.jpg");
+    background-image: url("./images/computer2.jpg");
     background-repeat: no-repeat;
     background-size: 1500px 700px;
     align-items: left;
