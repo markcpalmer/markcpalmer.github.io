@@ -13,7 +13,7 @@ html{
     font-size:16px;
 }
 h1,h2,h3{
-    color: rgb(247, 3, 3);
+    color: rgb(241, 9, 9);
 }
 h2:hover {
     color: #966;
@@ -51,7 +51,7 @@ header span{
     /*padding: 2em 0;*/
     text-align: left;
     margin: 0;
-    margin-right: 0;
+   
 }
 nav {
     position: fixed;
